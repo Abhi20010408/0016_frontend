@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <style>
+        header{
+            color: white;
+            height: 100px;
+            background-color: rgb(152, 199, 59);
+            display: flex;
+            justify-content: space-between;
+        }
+        header h1{
+            margin: 45px;
+            margin-top: 20px;
+            font-size: 50px;
+        }
+        header ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        header ul li{
+            padding-top: 35px;
+            padding-right: 30px;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        footer{
+            background-color: rgba(79, 222, 74, 0.768);
+            justify-content: space-between;
+            height:75px;
+        }
+        footer p{
+            font-size: 15px;
+            text-align: center;
+        }
+        .d1{
+            position: absolute;
+            top: 525px;
+            font-family: 'Times New Roman', Times, serif;
+            color:black;
+            font-size: 40px;
+        }
+        section{
+            display: flex;
+        }
+        .d2{
+            position: absolute;
+            left: 170px;
+            top: 555px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        span{
+            display: none;
+            color: black;
+            transition: 1s;
+        }
+        .main{
+            color: black;
+            border: 1px solid #000;
+            text-align: center;
+            width: 150px;
+            height: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            position: absolute;
+            top: 105px;
+            right:100px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .main:hover{
+            cursor: pointer;
+        }
+        .main:hover span{
+            display: block;
+            transition: 2s;
+        }
+        .main:hover .veg .test{
+            display: none;
+        }
+        .test{
+            background-color: white;
+            transition: 2s;
+            margin-left: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            background-color: lightcyan;
+        }
+        .main:hover .veg:hover .test{
+            display: block;
+            transition: 2s;
+        }
+        .main:hover .egg:hover .test{
+            display: block;
+            transition: 2s;
+        }
+        .main:hover .non-veg .test{
+            display: none;
+            transition: 2s;
+        }
+        .main:hover .egg .test{
+            display: none;
+            transition: 2s;
+            font-size: 15px;
+        }
+
+        .egg,.veg,.non-veg{
+            width:150px;
+            background-color: cyan;
+        }
+        .main:hover .non-veg:hover .test{
+            display: block;
+            transition: 2s;
+            font-size: 15px;
+        }
+        .quote{
+            position: absolute;
+            top: 300px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:40px;
+            text-align: center;
+            left: 300px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://png.pngtree.com/png-clipart/20200727/original/pngtree-restaurant-logo-design-vector-template-png-image_5441058.jpg" height="100px" width="100px">
+        <h1> My Restaurant</h1>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Rate Us</li></a>
+            <a href="#"><li>Login</li></a>
+        </ul>
+    </header>
+    <section>
+        <img src="https://wallpapercave.com/wp/wp1874173.jpg" height="500" width="100%">
+        <h1 class="quote">Life is uncertain. Eat dessert first</h1>
+        <h1 class="d1">Discount</h1>
+        <p class="d2">Get 50% off on your first order</p>
+        <div class="main">
+            items
+            <span class="veg">
+                veg
+                <a href="item1.html"><span class="test">chapati</span></a>
+                <a href="#"><span class="test">Veg Biriyani</span></a>
+            </span>
+            <span class ="egg">
+                egg
+                <a href="#"><span class="test">Egg roll</span></a>
+                <a href="#"><span class="test">Egg Biriyani</span></a>
+            </span>
+            <span class="non-veg">
+                non veg
+                <a href="#"><span class="test">Chicken Biriyani</span></a>
+                <a href="#"><span class="test">Chicken Fried Rice</span></a>
+            </span>
+        </div>
+    </section>
+    <marquee dir="ltr">Timings: 9.00am to 11.00pm</marquee>
+    <footer>
+        <p>&copy;2024 Abhinay<br />
+            <a href="#">Terms & Conditions<br />
+            <a href="#">Location</a></p>
+    </footer>
+</body>
+</html>
